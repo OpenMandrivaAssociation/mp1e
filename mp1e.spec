@@ -1,7 +1,7 @@
 %define name	mp1e
 %define version	1.9.9
 %define snapshot 20060612
-%define rel	2
+%define rel	3
 %define release 0.%snapshot.%rel
 
 Name: %{name}
@@ -23,7 +23,6 @@ Patch1: mp1e-1.9.8-aiw.patch.bz2
 BuildRoot: %{_tmppath}/%{name}-buildroot
 URL: http://sourceforge.net/projects/zapping/
 BuildRequires: libalsa-devel libesound-devel libaudiofile-devel
-BuildRequires: autoconf2.5
 ExclusiveArch: %ix86
 
 %description
@@ -38,7 +37,7 @@ cp -a %SOURCE1 .
 perl -pi -e 's,context.h codec.h rte.h option.h rtepriv.h,,' configure.in
 
 %build
-autoconf-2.5x
+autoconf
 %configure
 %make
 
@@ -54,3 +53,4 @@ rm -rf %{buildroot}
 %doc ChangeLog README BUGS README-aiw AUTHORS COPYING INSTALL
 %{_bindir}/%name
 %{_mandir}/man1/*
+
