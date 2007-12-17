@@ -20,7 +20,6 @@ Source: %{name}-%{snapshot}.tar.bz2
 Source1: README-aiw
 Patch1: mp1e-1.9.8-aiw.patch.bz2
 
-BuildRoot: %{_tmppath}/%{name}-buildroot
 URL: http://sourceforge.net/projects/zapping/
 BuildRequires: libalsa-devel libesound-devel libaudiofile-devel
 ExclusiveArch: %ix86
