@@ -1,0 +1,16 @@
+
+How to apply this patch:
+========================
+
+1. The patch is intended for 8-oct-2002 cvs snapshot, and
+   would probably work for 1.9.4 release as well. 
+   Make sure base snapshot compiles fine. If it doesn't,
+   consult regular manuals and READMEs before patching.
+
+2. Copy aiw.patch to mp1e source topmost directory.
+
+3. patch -p0 <aiw.patch
+
+4. recompile
+
+5. look into examples.sh for usage examples.
