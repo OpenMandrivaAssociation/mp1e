@@ -22,7 +22,7 @@ Patch1: mp1e-1.9.8-aiw.patch.bz2
 Patch2: mp1e-recent-autoconf.patch
 
 BuildRoot: %{_tmppath}/%{name}-buildroot
-URL: http://sourceforge.net/projects/zapping/
+URL: https://sourceforge.net/projects/zapping/
 BuildRequires: libalsa-devel libesound-devel libaudiofile-devel
 ExclusiveArch: %ix86
 
